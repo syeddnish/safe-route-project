@@ -103,7 +103,7 @@ export const RouteComparisonCards: React.FC<RouteComparisonCardsProps> = ({
                       <HelpCircle className="w-3 h-3 text-slate-500" />
                       <span className="text-[10px]">Data Insufficient</span>
                     </div>
-                  ) : evaluation?.safetyScore !== null ? (
+                  ) : typeof evaluation?.safetyScore ==='number' ? (
                     <div className="flex items-center space-x-1">
                       <span className="text-slate-400">Safety Indicator:</span>
                       <span
